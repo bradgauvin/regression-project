@@ -1,6 +1,6 @@
 # Regression-project
 
-https://github.com/bradgauvin/regression-project/blob/main/zillow-com-logo.png?raw=true
+![zillow-com-logo](https://user-images.githubusercontent.com/103786599/180569261-3dfdd644-5ab2-4d38-9eee-6e443c6d3023.png)
 
 This repository contains the code for the Regression project completed as part of the Codeup Data Science curriculum.
 
