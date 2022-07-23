@@ -36,7 +36,22 @@ This repository contains the code for the Regression project completed as part o
 
 ## Data Dictionary
 <details>
-
+|Feature Name|	Description|	Data Type| Updated to|
+|:---|:---|---:|:----|
+|parcel| Lot number |Key - unique identifier| |
+|bedrooms| number of bedrooms| categorical| deleted|
+|bathrooms| number of bathrooms| categorical| deleted|
+|square_feet| size of home| continuous| deleted|
+|garage| number of garages on lot| categorical| deleted|
+|pool| number of pools on lot| categorical| deleted|
+|lot_size| area of lot in square feet| continuous| deleted|
+|year_built| year home was built| continuous| deleted|
+|tax_value| value of property| target variable| deleted|
+|quality| Overall assessment of condition of building from best (lowest number) to worst (highest)| categorical| deleted|
+|fed_code| federal code relating to county| categorical| deleted|
+|age| age of home in 2017| categorical| deleted|
+|living_space| square foot of house minus avg. size of bedroom and bathrooms| continuous deleted|
+|county| categorical county 0 =LA, 1 = Orange, 2 = Ventura| categorical| deleted|
 
 </details>
 
