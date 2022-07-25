@@ -1,6 +1,6 @@
 # Regression-project
 
-https://github.com/bradgauvin/regression-project/blob/main/zillow-com-logo.png?raw=true
+![zillow-com-logo](https://user-images.githubusercontent.com/103786599/180569261-3dfdd644-5ab2-4d38-9eee-6e443c6d3023.png)
 
 This repository contains the code for the Regression project completed as part of the Codeup Data Science curriculum.
 
@@ -36,7 +36,22 @@ This repository contains the code for the Regression project completed as part o
 
 ## Data Dictionary
 <details>
-
+|Feature Name|	Description|	Data Type| Updated to|
+|:---|:---|---:|:----|
+|parcel| Lot number |Key - unique identifier| |
+|bedrooms| number of bedrooms| categorical| deleted|
+|bathrooms| number of bathrooms| categorical| deleted|
+|square_feet| size of home| continuous| deleted|
+|garage| number of garages on lot| categorical| deleted|
+|pool| number of pools on lot| categorical| deleted|
+|lot_size| area of lot in square feet| continuous| deleted|
+|year_built| year home was built| continuous| deleted|
+|tax_value| value of property| target variable| deleted|
+|quality| Overall assessment of condition of building from best (lowest number) to worst (highest)| categorical| deleted|
+|fed_code| federal code relating to county| categorical| deleted|
+|age| age of home in 2017| categorical| deleted|
+|living_space| square foot of house minus avg. size of bedroom and bathrooms| continuous deleted|
+|county| categorical county 0 =LA, 1 = Orange, 2 = Ventura| categorical| deleted|
 
 </details>
 
