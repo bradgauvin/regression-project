@@ -27,7 +27,16 @@ This repository contains the code for the Regression project completed as part o
 ### 7. Functions to support modeling work ()
 
 ## Project Goals
+*** Overall Goal:
+ - Use linear regression models to predict home values based onthe zillow 2017 dataset.
 
+Project Goals
+1. Document Code in a jupyter notebook
+2. Create Modules (acquire, prepare, etc.) for repeating process
+3. Explore data
+    - Statistical Tests
+    - Charts
+4. Construct a model to predict assessed home value for single family properties using regression techniques.
 
 ## Initial Questions and Hypotheses
 
