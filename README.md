@@ -23,23 +23,25 @@ This repository contains the code for the Regression project completed as part o
 ### 4. Prepare module (prepare.py)
 ### 5. Modeling module (model.py)
 ### 5. Predictions.csv
-### 6. Exploration & modeling notebooks (eda.ipynb)
+### 6. Exploration & modeling notebooks (zillow-eda-modeling.ipynb)
 ### 7. Functions to support modeling work ()
+### 8. Final Report
 
-## Project Goals
-*** Overall Goal:
- - Use linear regression models to predict home values based onthe zillow 2017 dataset.
+## Purpose
+The purpose of this notebook is to explore the data to identify which variables are primarily responsible for the changes in home prices from the data set.
 
-Project Goals
-1. Document Code in a jupyter notebook
-2. Create Modules (acquire, prepare, etc.) for repeating process
-3. Explore data
-    - Statistical Tests
-    - Charts
-4. Construct a model to predict assessed home value for single family properties using regression techniques.
+### Goal/Aim
+ - Your goal is to predict the values of single unit properties using the observations from 2017.
+ - Find which features variable pairs impact values
+ - Find which categorical and continuous variables impact value
+ - Build regression models to meet stakeholder questions
+ - Compare models and select best performing model
 
 ## Initial Questions and Hypotheses
-
+1. Find which features variable pairs impact values?
+     - What's the role of location (counties) in value?
+     - How does space affect value?
+     - What's the relationship between age, square_feet, age, and value (Continuous variables)
 
 
 
@@ -73,7 +75,7 @@ Project Goals
     - [x] Create questions related to the data
     - [x] Create a plan for completing the project using the data science pipeline
     - [x] Create a data dictionary to define variables and data context
-    - [x] Draft starting hypothesis
+    - [x] Draft starting hypothesis in EDA
 
 - Acquire:
    - [x] Create .gitignore
@@ -148,26 +150,23 @@ Project Goals
  
 
 ## Key Findings and Recommendations
- - [x] Autopay, Paperless billing, Fiber internet, and Electronic Check payments effct churn
- - [x] KNN model showed a 3% increase in predicting churn
+ - [x] Features: 
+ - [x] Polynomial regression had highest R2 and lowest RMSE scores
  - [x] Recommend additional exploritory analysis for different features
+   - May want to look at separating by county
+   - May want to look at binning continuous variables
 
  
 ## Errors and Limitations
- - Didn't split dataset before explortation.  Data set was rerun splitting into train, validate, and test with train being renamed to df2.  This was to ensure that all df2 codes didn't have to be updated. 
-     - Recommend splitting data before exploration
-     - Find additional ways to highlight features.  I used eli5, but may need to explore dtale, featurewix, or feature_selection from sklearn.
+ - Started analysis by county, but didn't get to getting a good product available
+ - Tried to get a final visualization to show comparison between baseline, train, validate, and test sets but did not accomplish
  
- - Adjusted features multiple times.  This caused some errors while writing the codes.  If you see features re-defined in the code, this is where I had trouble due to adjusting features.
-   - Recommend future features are identified and not changed until modeling is completed
-
-- Copying code from Modeling stage to final notebook caused errors.
-   - Recommend restarting and rerunning kernel before coping code from one notebook to another.
-   - Recommend validating variables are the same or in the same format before copy and pasting.  
+ - Created a loop error in my .py files.  model and explore file reference each other.  Had to bring in functions to this notebook to get it all to run correctly.
+    - would recommend breaking functions up to more manageable sections
+    - Would recommend having one file of functions rather than multiple to bring in
+  
 
 ## Future Work 
  - Recommend combing modleing results into dataframe and allowing the notebook to choose the highest accurcay/recall values
  - Try to write and test code out of your notebook and put final results in the notebook you're using.
- - Focus on key questions.  New insight will come when doing EDA, but keeping the project questions in mind will keep you focused.  
-      - Keep customer's focus
-      - SHow where you answer the questions
+
